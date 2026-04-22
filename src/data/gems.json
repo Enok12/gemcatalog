@@ -1,0 +1,287 @@
+[
+  {
+    "id": "1",
+    "name": "Cornflower Blue Sapphire",
+    "category": "Sapphire",
+    "price": 12400,
+    "carats": 3.82,
+    "color": "Cornflower Blue",
+    "origin": "Sri Lanka",
+    "cut": "Cushion",
+    "treatment": "Heat",
+    "image": "/src/assets/Gems Pics/Cornflower Blue Sapphire/cornflowerbluesapphire.webp",
+    "images": [
+      "/src/assets/Gems Pics/Cornflower Blue Sapphire/cornflowerbluesapphire.webp",
+      "/src/assets/Gems Pics/Cornflower Blue Sapphire/d1597808c5be4964a4624885d21d9e8e.thumbnail.0000000_1024x.webp"
+    ],
+    "description": "An extraordinary Cornflower Blue sapphire from the legendary gem mines of Sri Lanka. This vibrant stone exhibits the highly coveted intense blue hue with perfect saturation and exceptional brilliance. Certified by GIA."
+  },
+  {
+    "id": "2",
+    "name": "Pigeon's Blood Ruby",
+    "category": "Ruby",
+    "price": 48500,
+    "carats": 2.14,
+    "color": "Vivid Red",
+    "origin": "Myanmar (Burma)",
+    "cut": "Oval",
+    "treatment": "Minor Heat",
+    "image": "/src/assets/Gems Pics/Pigeon's Blood Ruby/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Pigeon's Blood Ruby/1.webp",
+      "/src/assets/Gems Pics/Pigeon's Blood Ruby/2.webp"
+    ],
+    "description": "A truly exceptional Pigeon's Blood ruby from the Mogok valley of Myanmar. The finest rubies in the world come from this legendary region. This stone displays the iconic vivid red with a slight bluish hue that defines the coveted Pigeon's Blood designation."
+  },
+  {
+    "id": "3",
+    "name": "Paraiba Tourmaline",
+    "category": "Tourmaline",
+    "price": 67200,
+    "carats": 4.02,
+    "color": "Neon Blue",
+    "origin": "Nigeria",
+    "cut": "Cushion",
+    "treatment": "Minor Heat",
+    "image": "/src/assets/Gems Pics/Paraiba Tourmaline/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Paraiba Tourmaline/1.webp",
+      "/src/assets/Gems Pics/Paraiba Tourmaline/2.webp"
+    ],
+    "description": "This extraordinary Paraiba tourmaline from Nigeria glows with an almost electric neon blue, caused by trace amounts of copper. One of the rarest and most sought-after gems in the world. The brilliance is unmatched."
+  },
+  {
+    "id": "4",
+    "name": "Colombian Emerald",
+    "category": "Emerald",
+    "price": 31800,
+    "carats": 5.60,
+    "color": "Vivid Green",
+    "origin": "Colombia",
+    "cut": "Octagon (Step)",
+    "treatment": "Minor Oil",
+    "image": "/src/assets/Gems Pics/Colombian Emerald/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Colombian Emerald/1.webp",
+      "/src/assets/Gems Pics/Colombian Emerald/2.webp",
+      "/src/assets/Gems Pics/Colombian Emerald/3.webp"
+    ],
+    "description": "A magnificent Colombian emerald with the lush, velvety green that defines the finest specimens from the Muzo and Chivor mines. The slight blue undertone and natural inclusions (jardin) are characteristic and authentic hallmarks of Colombian origin."
+  },
+  {
+    "id": "5",
+    "name": "Alexandrite",
+    "category": "Investment Stones",
+    "price": 89000,
+    "carats": 2.88,
+    "color": "Color Change Green/Purple",
+    "origin": "Brazil",
+    "cut": "Oval",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/Alexandrite/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Alexandrite/1.webp",
+      "/src/assets/Gems Pics/Alexandrite/2.webp",
+      "/src/assets/Gems Pics/Alexandrite/3.webp"
+    ],
+    "description": "A phenomenal natural alexandrite exhibiting a dramatic color change from vivid green in daylight to rich purplish-red under incandescent light. Unheated and untreated. Among the rarest gemstones on earth — rarer than diamonds."
+  },
+  {
+    "id": "6",
+    "name": "Cobalt Blue Spinel",
+    "category": "Spinel",
+    "price": 52000,
+    "carats": 3.45,
+    "color": "Cobalt Blue",
+    "origin": "Tanzania",
+    "cut": "Cushion",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/Cobalt Blue Spinel/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Cobalt Blue Spinel/1.webp",
+      "/src/assets/Gems Pics/Cobalt Blue Spinel/2.webp",
+      "/src/assets/Gems Pics/Cobalt Blue Spinel/3.webp"
+    ],
+    "description": "An extraordinary cobalt spinel from the Mahenge region of Tanzania. The electric cobalt blue color is caused by traces of cobalt, making these stones exceptionally rare. The natural, no-heat status makes it even more valuable."
+  },
+  {
+    "id": "7",
+    "name": "Padparadscha Sapphire",
+    "category": "Sapphire",
+    "price": 44750,
+    "carats": 3.10,
+    "color": "Pinkish Orange",
+    "origin": "Sri Lanka",
+    "cut": "Oval",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/Padparadscha Sapphire/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Padparadscha Sapphire/1.webp",
+      "/src/assets/Gems Pics/Padparadscha Sapphire/2.webp",
+      "/src/assets/Gems Pics/Padparadscha Sapphire/3.webp"
+    ],
+    "description": "The ultra-rare Padparadscha sapphire displays the exquisite blend of pink and orange that evokes a lotus blossom at sunrise. Named after the Sinhalese word for lotus flower. Unheated Sri Lankan Padparadscha are among the most precious sapphires."
+  },
+  {
+    "id": "8",
+    "name": "Demantoid Garnet",
+    "category": "Garnet",
+    "price": 18900,
+    "carats": 2.35,
+    "color": "Vivid Green",
+    "origin": "Russia (Ural)",
+    "cut": "Round",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/Demantoid Garnet/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Demantoid Garnet/1.webp",
+      "/src/assets/Gems Pics/Demantoid Garnet/2.webp",
+      "/src/assets/Gems Pics/Demantoid Garnet/3.webp"
+    ],
+    "description": "A spectacular Russian demantoid garnet from the Ural Mountains with the characteristic 'horsetail' inclusions confirming its Russian provenance. With a dispersion higher than diamond, demantoid displays an unparalleled fire that few gems can match."
+  },
+  {
+    "id": "9",
+    "name": "South Sea Pearl Strand",
+    "category": "Pearls",
+    "price": 9800,
+    "carats": null,
+    "color": "White/Silver",
+    "origin": "Australia",
+    "cut": "Round",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/South Sea Pearl Strand/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/South Sea Pearl Strand/1.webp",
+      "/src/assets/Gems Pics/South Sea Pearl Strand/2.webp",
+      "/src/assets/Gems Pics/South Sea Pearl Strand/3.webp"
+    ],
+    "description": "A matched strand of South Sea pearls from the pristine waters of northwestern Australia. Each pearl is perfectly round with exceptional luster, saturation, and orient. South Sea pearls are the largest and rarest of cultured pearls."
+  },
+  {
+    "id": "10",
+    "name": "Yellow Sapphire",
+    "category": "Sapphire",
+    "price": 8600,
+    "carats": 6.85,
+    "color": "Golden Yellow",
+    "origin": "Sri Lanka",
+    "cut": "Radiant",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/Yellow Sapphire/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Yellow Sapphire/1.webp",
+      "/src/assets/Gems Pics/Yellow Sapphire/2.webp",
+      "/src/assets/Gems Pics/Yellow Sapphire/3.webp"
+    ],
+    "description": "A magnificent unheated golden yellow sapphire from Sri Lanka. The pure, saturated yellow color with no greenish or orangish overtones is ideal. Unheated status confirmed by laboratory certification. Sri Lankan yellow sapphires are among the finest in the world."
+  },
+  {
+    "id": "11",
+    "name": "Tsavorite Garnet",
+    "category": "Garnet",
+    "price": 14200,
+    "carats": 3.67,
+    "color": "Vivid Green",
+    "origin": "Kenya",
+    "cut": "Oval",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/Tsavorite Garnet/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Tsavorite Garnet/1.webp",
+      "/src/assets/Gems Pics/Tsavorite Garnet/2.webp",
+      "/src/assets/Gems Pics/Tsavorite Garnet/3.webp"
+    ],
+    "description": "A gorgeous tsavorite garnet from Kenya with an exceptionally vivid green color. Tsavorite is a green grossular garnet that rivals emerald in color but surpasses it in brilliance and clarity. 100% natural, no treatments of any kind."
+  },
+  {
+    "id": "12",
+    "name": "Tanzanite",
+    "category": "Investment Stones",
+    "price": 6750,
+    "carats": 8.40,
+    "color": "Royal Blue",
+    "origin": "Tanzania",
+    "cut": "Cushion",
+    "treatment": "Heat",
+    "image": "/src/assets/Gems Pics/Paraiba Tourmaline/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Paraiba Tourmaline/1.webp",
+      "/src/assets/Gems Pics/Paraiba Tourmaline/2.webp",
+      "/src/assets/Gems Pics/Paraiba Tourmaline/3.webp"
+    ],
+    "description": "A stunning royal blue tanzanite with strong trichroism — displaying blue, purple, and burgundy depending on viewing angle. Found only near Mount Kilimanjaro, tanzanite is considered 1000 times rarer than diamond. This large specimen exhibits the finest 'D' block blue."
+  },
+  {
+    "id": "13",
+    "name": "Pink Sapphire",
+    "category": "Sapphire",
+    "price": 22300,
+    "carats": 4.55,
+    "color": "Hot Pink",
+    "origin": "Madagascar",
+    "cut": "Oval",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/Paraiba Tourmaline/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Paraiba Tourmaline/1.webp",
+      "/src/assets/Gems Pics/Paraiba Tourmaline/2.webp",
+      "/src/assets/Gems Pics/Paraiba Tourmaline/3.webp"
+    ],
+    "description": "An exceptional unheated hot pink sapphire from Madagascar. The vivid, saturated pink color without any heat treatment is extremely rare. Madagascar has emerged as a premier source for vivid pink sapphires, rivaling those from Myanmar."
+  },
+  {
+    "id": "14",
+    "name": "Imperial Topaz",
+    "category": "Investment Stones",
+    "price": 11400,
+    "carats": 12.80,
+    "color": "Imperial Orange",
+    "origin": "Brazil (Ouro Preto)",
+    "cut": "Pear",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/Imperial Topaz/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Imperial Topaz/1.webp",
+      "/src/assets/Gems Pics/Imperial Topaz/2.webp",
+      "/src/assets/Gems Pics/Imperial Topaz/3.webp"
+    ],
+    "description": "A magnificent Imperial Topaz from the legendary mines of Ouro Preto, Brazil. The distinctive orange-gold with pinkish-red flashes is unique to Imperial Topaz and found nowhere else. Completely natural with no treatments."
+  },
+  {
+    "id": "15",
+    "name": "Mahenge Spinel",
+    "category": "Spinel",
+    "price": 38500,
+    "carats": 3.88,
+    "color": "Vivid Pink-Red",
+    "origin": "Tanzania (Mahenge)",
+    "cut": "Cushion",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/Mahenge Spinel/1.webp",
+    "images": [
+      "/src/assets/Gems Pics/Mahenge Spinel/1.webp",
+      "/src/assets/Gems Pics/Mahenge Spinel/2.webp",
+      "/src/assets/Gems Pics/Mahenge Spinel/3.webp"
+    ],
+    "description": "A breathtaking Mahenge spinel with the intensely luminescent vivid pink-red that seems to glow from within. The Mahenge region of Tanzania produces the world's most spectacular spinels. The neon quality is caused by chromium and vanadium traces."
+  },
+  {
+    "id": "16",
+    "name": "Diamond Solitaire",
+    "category": "Diamonds",
+    "price": 125000,
+    "carats": 3.01,
+    "color": "D (Colorless)",
+    "origin": "Botswana",
+    "cut": "Round Brilliant",
+    "treatment": "None",
+    "image": "/src/assets/Gems Pics/Diamond Solitaire/1.jpg",
+    "images": [
+      "/src/assets/Gems Pics/Diamond Solitaire/1.jpg",
+      "/src/assets/Gems Pics/Diamond Solitaire/2.jpg",
+      "/src/assets/Gems Pics/Diamond Solitaire/3.jpg"
+    ],
+    "description": "An exceptional D/VVS1 round brilliant diamond with ideal proportions for maximum brilliance. GIA certified. The stone exhibits impeccable symmetry and polish with a superior cut grade. The perfect investment stone — eternal, portable wealth."
+  }
+]
