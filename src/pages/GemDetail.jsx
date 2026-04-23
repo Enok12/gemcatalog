@@ -41,7 +41,8 @@ export default function GemDetail() {
   const navigate = useNavigate()
   const gem = gems.find(g => g.id === id)
   const [imgLoaded, setImgLoaded] = useState(false)
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0)
+  // const [selectedImageIndex, setSelectedImageIndex] = useState(0)
+  const [selectedMedia, setSelectedMedia] = useState({ type: 'image', index: 0 })
   const { toggle, isWished } = useWishlist()
   const wished = gem ? isWished(gem.id) : false
 
@@ -108,12 +109,28 @@ export default function GemDetail() {
                 {!imgLoaded && (
                   <div className="absolute inset-0 shimmer" />
                 )}
-                <img
+                {/* <img
                   src={images[selectedImageIndex]}
                   alt={gem.name}
                   className={`w-full h-full object-cover transition-opacity duration-500 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
                   onLoad={() => setImgLoaded(true)}
-                />
+                /> */}
+
+                {selectedMedia.type === 'video' ? (
+                  <video
+                    key={selectedMedia.src}
+                    src={selectedMedia.src}
+                    className="w-full h-full object-cover"
+                    controls autoPlay loop muted
+                  />
+                  ) : (
+                    <img
+                      src={images[selectedMedia.index]}
+                      alt={gem.name}
+                      className={`w-full h-full object-cover transition-opacity duration-500 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
+                      onLoad={() => setImgLoaded(true)}
+                    />
+                  )}
                 {/* Overlay badges */}
                 <div className="absolute top-4 left-4 flex flex-col gap-2">
                   <span className="bg-[#050e2a]/80 backdrop-blur-sm text-white/80 text-[9px] font-body tracking-[0.2em] uppercase px-3 py-1.5 rounded-full border border-white/10">
@@ -136,7 +153,7 @@ export default function GemDetail() {
               {/* Thumbnail row */}
               {images.length > 1 && (
                 <div className="flex gap-3">
-                  {images.map((img, i) => (
+                  {/* {images.map((img, i) => (
                     <button
                       key={i}
                       onClick={() => {
@@ -151,7 +168,33 @@ export default function GemDetail() {
                         className="w-full h-full object-cover"
                       />
                     </button>
-                  ))}
+                  ))} */}
+
+                  {images.map((img, i) => (
+                      <button
+                        key={`img-${i}`}
+                        onClick={() => { setSelectedMedia({ type: 'image', index: i }); setImgLoaded(false) }}
+                        className={`flex-1 aspect-square rounded-xl overflow-hidden cursor-pointer ring-2 transition-all ${selectedMedia.type === 'image' && selectedMedia.index === i ? 'ring-[#d4a820]' : 'ring-transparent hover:ring-[#d4a820]/40'}`}
+                      >
+                        <img src={img} alt={`View ${i + 1}`} className="w-full h-full object-cover" />
+                      </button>
+                    ))}
+
+                    {gem.videos && gem.videos.map((vid, i) => (
+                      <button
+                        key={`vid-${i}`}
+                        onClick={() => setSelectedMedia({ type: 'video', src: vid })}
+                        className={`flex-1 aspect-square rounded-xl overflow-hidden cursor-pointer ring-2 transition-all relative ${selectedMedia.type === 'video' && selectedMedia.src === vid ? 'ring-[#d4a820]' : 'ring-transparent hover:ring-[#d4a820]/40'}`}
+                      >
+                        <video src={vid} className="w-full h-full object-cover" muted />
+                        <div className="absolute inset-0 flex items-center justify-center"
+                          style={{ background: 'rgba(5,14,42,0.45)' }}>
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <polygon points="5,3 19,12 5,21"/>
+                          </svg>
+                        </div>
+                      </button>
+                    ))}
                 </div>
               )}
             </div>
@@ -258,7 +301,7 @@ export default function GemDetail() {
 
                 <a
                   href="mailto:info@cgt.onl"
-                  className="flex items-center justify-center gap-3 w-full py-3.5 px-6 rounded-xl font-body text-sm font-medium tracking-widest uppercase border transition-all duration-200 hover:bg-[#050e2a] hover:!text-white hover:border-[#050e2a]"
+                  className="flex items-center justify-center gap-3 w-full py-3.5 px-6 rounded-xl font-body text-sm font-medium tracking-widest uppercase border transition-all duration-200 hover:bg-[#050e2a] hover:text-white hover:border-[#050e2a]"
                   style={{
                     color: '#050e2a',
                     borderColor: 'rgba(5,14,42,0.3)',
