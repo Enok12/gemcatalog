@@ -6,10 +6,8 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        display: ['"Cormorant Garamond"', 'serif'],
-        body: ['"Jost"', 'sans-serif'],
-      },
+      display: ['Poppins', 'sans-serif'],
+      body: ['Poppins', 'sans-serif'],
       colors: {
         navy: {
           950: '#020818',

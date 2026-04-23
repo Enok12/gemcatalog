@@ -6,8 +6,9 @@
   * {
     box-sizing: border-box;
   }
+ 
   body {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f0ede8;
     color: #1a1a2e;
     -webkit-font-smoothing: antialiased;
@@ -56,7 +57,7 @@
 
 @layer utilities {
   .font-display {
-    font-family: 'Cormorant Garamond', serif;
+     font-family: 'Poppins', sans-serif;
   }
 
   .scrollbar-hide {
