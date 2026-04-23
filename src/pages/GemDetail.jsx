@@ -66,7 +66,13 @@ export default function GemDetail() {
   }
 
   // Related gems
-  const related = gems.filter(g => g.category === gem.category && g.id !== gem.id).slice(0, 3)
+  // const related = gems.filter(g => g.category === gem.category && g.id !== gem.id).slice(0, 3)
+
+    const primaryCategory = gem.categories ? gem.categories[0] : gem.category
+    const related = gems.filter(g => {
+    const gCats = g.categories || [g.category]
+    return gCats.includes(primaryCategory) && g.id !== gem.id
+  }).slice(0, 3)
 
   const whatsappMsg = encodeURIComponent(`Hello, I'm interested in the ${gem.name} (${gem.carats ? gem.carats + ' ct, ' : ''}${gem.origin}) listed at ${formatPrice(gem.price)}.`)
 
@@ -254,7 +260,10 @@ export default function GemDetail() {
                 <DetailRow label="Cut" value={gem.cut} />
                 {gem.carats && <DetailRow label="Weight" value={`${gem.carats} carats`} />}
                 <DetailRow label="Treatment" value={gem.treatment} />
-                <DetailRow label="Category" value={gem.category} />
+                <DetailRow
+                  label="Category"
+                  value={gem.categories ? gem.categories.join(', ') : gem.category}
+                />
               </div>
 
               {/* Description */}

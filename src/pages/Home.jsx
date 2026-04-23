@@ -141,9 +141,13 @@ export default function Home({ activeCategory, setActiveCategory }) {
   const filtered = useMemo(() => {
     let list = gems
 
-    if (activeCategory !== 'All' && activeCategory !== 'Gemstones') {
-      list = list.filter(g => g.category === activeCategory)
-    }
+   if (activeCategory !== 'All' && activeCategory !== 'Gemstones') {
+    list = list.filter(g =>
+    g.categories
+      ? g.categories.includes(activeCategory)
+      : g.category === activeCategory
+  )
+}
 
     const q = search.trim().toLowerCase()
     if (q) {

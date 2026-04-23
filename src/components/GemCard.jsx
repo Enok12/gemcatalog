@@ -102,7 +102,7 @@ export default function GemCard({ gem, index = 0 }) {
           {/* Category badge */}
           <div className="absolute top-2.5 left-2.5">
             <span className="bg-[#050e2a]/80 backdrop-blur-sm text-white/70 text-[8px] font-body font-medium tracking-[0.18em] uppercase px-2 py-0.5 rounded-full border border-white/10">
-              {gem.category}
+             {gem.categories ? gem.categories[0] : gem.category}
             </span>
           </div>
 

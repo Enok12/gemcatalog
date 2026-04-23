@@ -95,7 +95,7 @@ export default function QuickView({ gem, onClose }) {
           <div className="flex-1 p-6 flex flex-col">
             <div className="mb-1">
               <span className="font-body text-[9px] tracking-[0.3em] uppercase font-medium" style={{ color: '#d4a820' }}>
-                {gem.category} · {gem.origin}
+               {gem.categories ? gem.categories[0] : gem.category} · {gem.origin}
               </span>
             </div>
             <h2 className="font-display text-2xl font-semibold text-[#1a1a2e] leading-tight mb-3">

@@ -3,6 +3,7 @@
     "id": "1",
     "name": "Cornflower Blue Sapphire",
     "category": "Sapphire",
+    "categories": ["Sapphire", "Ruby"],
     "price": 12400,
     "carats": 3.82,
     "color": "Cornflower Blue",

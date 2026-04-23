@@ -23,7 +23,11 @@ const FIELDS = [
       </span>
     )
   },
-  { key: 'category',  label: 'Category',   fmt: v => v },
+{ key: 'categories', label: 'Category', fmt: (v, gem) => {
+  if (Array.isArray(v)) return v.join(', ')
+  if (v) return v
+  return gem?.category || '—'
+}},
 ]
 
 function ScoreBar({ gem }) {
@@ -173,7 +177,9 @@ export default function ComparePage() {
               </div>
               {/* Values */}
               {compareList.map((gem, gi) => {
-                const val = gem[field.key]
+               const val = field.key === 'categories'
+              ? (gem.categories || gem.category)
+              : gem[field.key]
                 // Highlight best price (lowest)
                 let highlight = false
                 if (field.key === 'price') {
