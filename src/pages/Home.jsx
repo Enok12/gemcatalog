@@ -209,7 +209,7 @@ export default function Home({ activeCategory, setActiveCategory }) {
         <div className="relative max-w-2xl">
           <div className="flex items-center gap-3 mb-3">
             <div className="h-px w-8" style={{ background: '#d4a820' }} />
-            <span className="text-[10px] font-body font-medium tracking-[0.4em] uppercase" style={{ color: 'rgba(212,168,32,0.7)' }}>
+            <span className="text-[15px] font-body font-black tracking-[0.17em] uppercase" style={{ color: 'rgba(212,168,32,0.7)' }}>
               Certified Fine Gemstones
             </span>
           </div>
@@ -222,10 +222,10 @@ export default function Home({ activeCategory, setActiveCategory }) {
               <><span className="italic font-light" style={{ color: '#d4a820' }}>{activeCategory}</span><br />Collection</>
             )}
           </h2>
-          <p className="mt-2 font-body text-white/40 text-sm leading-relaxed font-light max-w-lg">
+          <p className="mt-2 font-body text-white/60 text-sm leading-relaxed font-medium max-w-lg">
             {CATEGORY_DESCRIPTIONS[activeCategory] || 'Every stone individually certified, ethically sourced, with full laboratory documentation.'}
           </p>
-          <div className="mt-4 flex items-center gap-4 text-white/35 font-body text-xs tracking-wider flex-wrap">
+          <div className="mt-4 flex items-center gap-4 text-white/60 font-body font-medium text-xs tracking-wider flex-wrap">
             {[`${filtered.length} stones`, 'GIA Certified', 'Free Shipping'].map((txt, i) => (
               <React.Fragment key={i}>
                 {i > 0 && <span className="w-px h-3.5 bg-white/15" />}
