@@ -11,6 +11,7 @@ import Wishlist from './pages/Wishlist.jsx'
 import ComparePage from './pages/ComparePage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
+import logo from './assets/Logo.png'
 
 function MobileNav({ onOpen, wishlistCount }) {
   const navigate = useNavigate()
@@ -29,9 +30,12 @@ function MobileNav({ onOpen, wishlistCount }) {
           <polygon points="14,2 26,8.5 26,19.5 14,26 2,19.5 2,8.5" fill="none" stroke="#d4a820" strokeWidth="1" opacity="0.7"/>
           <polygon points="14,7 21,11 21,17 14,21 7,17 7,11" fill="rgba(212,168,32,0.1)" stroke="#d4a820" strokeWidth="0.6"/>
         </svg> */}
-        <span className="font-display text-lg font-semibold tracking-[0.18em]" style={{ color: '#d4a820' }}>
-          CGT
-        </span>
+          <div className="flex items-center gap-2">
+            <img src={logo} alt="CGT Logo" className="h-10 w-10 object-contain" />
+            <span className="font-display text-lg font-semibold tracking-[0.18em]" style={{ color: '#d4a820' }}>
+               CGT
+            </span>
+         </div>
       </div>
 
       {/* Wishlist icon */}
