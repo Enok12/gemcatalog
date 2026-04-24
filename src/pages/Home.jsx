@@ -82,11 +82,11 @@ function SpotlightBanner({ gem }) {
   const navigate = useNavigate()
   if (!gem) return null
   return (
-    <div
-      className="relative overflow-hidden mx-5 md:mx-10 mt-6 rounded-2xl cursor-pointer group"
-      onClick={() => navigate(`/gem/${gem.id}`)}
-      style={{ boxShadow: '0 8px 40px rgba(5,14,42,0.18)' }}
-    >
+      <div
+        className="relative overflow-hidden mx-5 md:mx-10 mt-6 rounded-2xl cursor-pointer group transition-all duration-300 hover:scale-[1.01] active:scale-[0.99]"
+        onClick={() => navigate(`/gem/${gem.id}`)}
+        style={{ boxShadow: '0 8px 40px rgba(5,14,42,0.18)' }}
+      >
       {/* Background image */}
       <div className="aspect-[3/1] md:aspect-[4/1] relative">
         <img src={gem.image} alt={gem.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
@@ -118,9 +118,16 @@ function SpotlightBanner({ gem }) {
             <span className="font-display text-2xl font-semibold" style={{ color: '#d4a820' }}>
               {formatPrice(gem.price)}
             </span>
-            <span className="font-body text-[10px] text-white/50 tracking-widest uppercase flex items-center gap-1.5 group-hover:text-white/80 transition-colors">
+           <span
+              className="font-body font-medium text-[10px] tracking-widest uppercase flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 group-hover:gap-3"
+              style={{
+                background: 'rgba(212,168,32,0.15)',
+                border: '1px solid rgba(212,168,32,0.4)',
+                color: '#d4a820',
+              }}
+            >
               View Details
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" className="group-hover:translate-x-0.5 transition-transform">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" className="group-hover:translate-x-1 transition-transform duration-300">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
             </span>

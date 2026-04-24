@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import gems from '../data/gems.json'
 import { useWishlist } from '../context/WishlistContext.jsx'
 
-const WHATSAPP_NUMBER = '66613953588'
+const WHATSAPP_NUMBER = '94768482447'
 
 function formatPrice(price) {
   return new Intl.NumberFormat('en-US', {
