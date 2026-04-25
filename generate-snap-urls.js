@@ -1,5 +1,5 @@
-import gems from './src/data/gems.json' assert { type: 'json' }
 import fs from 'fs'
+const gems = JSON.parse(fs.readFileSync('./src/data/gems.json', 'utf8'))
 
 const urls = [
   '/',
