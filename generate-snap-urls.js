@@ -1,21 +1,7 @@
 import fs from 'fs'
+
 const gems = JSON.parse(fs.readFileSync('./src/data/gems.json', 'utf8'))
 
-const urls = [
-  '/',
-  '/about',
-  '/contact',
-  '/wishlist',
-  '/compare',
-  ...gems.map(g => `/gem/${g.id}`)
-]
-
-// Update package.json reactSnap urls
-const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'))
-pkg.reactSnap.include = urls
-fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2))
-
-// Generate sitemap.xml
 const baseUrl = 'https://cgt.onl'
 
 const staticUrls = [
@@ -43,5 +29,4 @@ ${allUrls.map(u => `  <url>
 
 fs.writeFileSync('./public/sitemap.xml', sitemap)
 
-console.log(`✅ Generated ${urls.length} URLs for react-snap`)
 console.log(`✅ Generated sitemap.xml with ${allUrls.length} entries`)
