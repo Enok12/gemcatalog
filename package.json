@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node generate-snap-urls.js",
+    "build": "node generate-snap-urls.js && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

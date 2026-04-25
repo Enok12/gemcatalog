@@ -29,4 +29,5 @@ ${allUrls.map(u => `  <url>
 
 fs.writeFileSync('./public/sitemap.xml', sitemap)
 
+
 console.log(`✅ Generated sitemap.xml with ${allUrls.length} entries`)
