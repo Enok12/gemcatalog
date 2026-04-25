@@ -204,7 +204,7 @@ export default function Home({ activeCategory, setActiveCategory }) {
       {/* SEO setup */}
       <Helmet>
         <title>CGT — Certified Natural Gemstones | Cambodian Gem Trading</title>
-        <meta name="description" content="Browse certified natural gemstones — Sapphires, Rubies, Emeralds, Paraiba Tourmaline and more. Direct from Cambodia Gem Trading. GIA certified, worldwide shipping." />
+        <meta name="description" content="Buy certified natural gemstones direct from Cambodia. Sapphires from $1,200, Rubies, Emeralds, Paraiba Tourmaline. GIA certified. Free worldwide shipping." />
         <link rel="canonical" href="https://cgt.onl" />
         <script type="application/ld+json">
           {JSON.stringify({
