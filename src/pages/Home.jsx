@@ -4,6 +4,8 @@ import GemCard from '../components/GemCard.jsx'
 import SearchBar from '../components/SearchBar.jsx'
 import CompareBar from '../components/CompareBar.jsx'
 import gems from '../data/gems.json'
+import { Helmet } from 'react-helmet-async'
+
 
 const CATEGORIES = ['All', 'Investment Stones', 'Gemstones', 'Amber', 'Amethyst', 'Ametrine', 'Aquamarine', 'Citrine', 'Diamond', 'Fancy Color Diamond', 'Emerald', 'Garnet', 'Iolite', 'Jade', 'Kunzite', 'Lapis Lazuli', 'Moonstone', 'Morganite', 'Opal', 'Pearl', 'Peridot', 'Rose Quartz', 'Ruby', 'Sapphire', 'Spinel', 'Sunstone', 'Tanzanite', 'Topaz', 'Tourmaline', 'Turquoise', 'Zircon']
 
@@ -198,6 +200,28 @@ export default function Home({ activeCategory, setActiveCategory }) {
 
   return (
     <div className="min-h-screen pb-24">
+
+      {/* SEO setup */}
+      <Helmet>
+        <title>CGT — Certified Natural Gemstones | Cambodian Gem Trading</title>
+        <meta name="description" content="Browse certified natural gemstones — Sapphires, Rubies, Emeralds, Paraiba Tourmaline and more. Direct from Cambodia Gem Trading. GIA certified, worldwide shipping." />
+        <link rel="canonical" href="https://cgt.onl" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Store",
+            "name": "Cambodia Gem Trading",
+            "url": "https://cgt.onl",
+            "description": "Certified natural gemstones direct from Cambodia",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer service",
+              "availableLanguage": ["English"]
+            }
+          })}
+        </script>
+      </Helmet>
+
       {/* Hero strip */}
       <div
         className="relative overflow-hidden px-6 py-8 md:px-10"

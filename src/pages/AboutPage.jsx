@@ -1,5 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
+
 
 const STATS = [
   { num: '16+', label: 'Years of Excellence' },
@@ -29,6 +31,14 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen">
+
+      {/* SEO */}
+      <Helmet>
+        <title>About Us — Cambodia Gem Trading | CGT</title>
+        <meta name="description" content="Learn about Cambodia Gem Trading — certified gemstone specialists sourcing directly from mines in Sri Lanka, Myanmar, Colombia and beyond." />
+        <link rel="canonical" href="https://cgt.onl/about" />
+      </Helmet>
+
       {/* Hero */}
       <div
         className="relative overflow-hidden px-6 py-14 md:px-10"
