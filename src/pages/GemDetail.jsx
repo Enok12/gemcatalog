@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import gems from '../data/gems.json'
 import { useWishlist } from '../context/WishlistContext.jsx'
+import { Helmet } from 'react-helmet-async'
+
 
 const WHATSAPP_NUMBER = '94768482447'
 
@@ -76,8 +78,65 @@ export default function GemDetail() {
 
   const whatsappMsg = encodeURIComponent(`Hello, I'm interested in the ${gem.name} (${gem.carats ? gem.carats + ' ct, ' : ''}${gem.origin}) listed at ${formatPrice(gem.price)}.`)
 
+  const siteUrl = 'https://cgt.onl'
+  const gemUrl = `${siteUrl}/gem/${gem.id}`
+  const gemImage = gem.image.startsWith('http') ? gem.image : `${siteUrl}${gem.image}`
+  const gemTitle = `${gem.name} — ${gem.carats ? gem.carats + 'ct ' : ''}${gem.origin} | CGT`
+
+
   return (
     <div className="detail-enter min-h-screen">
+      {/* SEO setup */}
+      <Helmet>
+            <title>{gemTitle}</title>
+            <meta name="description" content={gem.description} />
+            <link rel="canonical" href={gemUrl} />
+
+            <meta property="og:type" content="product" />
+            <meta property="og:title" content={gemTitle} />
+            <meta property="og:description" content={gem.description} />
+            <meta property="og:image" content={gemImage} />
+            <meta property="og:url" content={gemUrl} />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={gemTitle} />
+            <meta name="twitter:description" content={gem.description} />
+            <meta name="twitter:image" content={gemImage} />
+
+            <script type="application/ld+json">
+              {JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Product",
+                "name": gem.name,
+                "description": gem.description,
+                "image": gemImage,
+                "url": gemUrl,
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Cambodia Gem Trading"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "price": gem.price,
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "url": gemUrl,
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "Cambodia Gem Trading"
+                  }
+                },
+                "additionalProperty": [
+                  { "@type": "PropertyValue", "name": "Origin", "value": gem.origin },
+                  { "@type": "PropertyValue", "name": "Color", "value": gem.color },
+                  { "@type": "PropertyValue", "name": "Cut", "value": gem.cut },
+                  { "@type": "PropertyValue", "name": "Treatment", "value": gem.treatment },
+                  gem.carats && { "@type": "PropertyValue", "name": "Weight", "value": `${gem.carats} carats` }
+                ].filter(Boolean)
+              })}
+            </script>
+          </Helmet>
+
       {/* Back button */}
       <div className="px-5 md:px-10 pt-6 pb-2 flex items-center justify-between">
         <button

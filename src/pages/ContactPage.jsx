@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
+
 
 const WHATSAPP_NUMBER = '94768482447'
 
@@ -16,6 +18,15 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen">
+
+      {/* SEO Setup */}
+
+      <Helmet>
+        <title>Contact Us — Cambodia Gem Trading | CGT</title>
+        <meta name="description" content="Contact Cambodia Gem Trading for gemstone enquiries. Available via WhatsApp, Telegram, and email. We respond within 24 hours." />
+        <link rel="canonical" href="https://cgt.onl/contact" />
+      </Helmet>
+
       {/* Hero */}
       <div
         className="relative overflow-hidden px-6 py-12 md:px-10"
